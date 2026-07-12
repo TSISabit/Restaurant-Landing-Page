@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #111;
+}
+.navbar {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo i {
+  font-size: 36px;
+  color: #f7b731;
+}
+
+.logo-text h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.logo-text p {
+  color: #f7b731;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: #f7b731;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #f7b731;
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after {
+  width: 100%;
+}
+
+.reservation-btn {
+  background: #f7b731;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.reservation-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
