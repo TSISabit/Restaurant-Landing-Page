@@ -109,3 +109,91 @@ header {
   background: white;
   transform: translateY(-3px);
 }
+
+/* Hero */
+/* --- Hero Section Font --- */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./images/Banner.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.hero-content {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-subtitle {
+  font-family: "Great Vibes", cursive;
+  color: #f7b731;
+  font-size: 36px;
+  text-transform: none;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  max-width: 650px;
+  letter-spacing: 1px;
+}
+
+.hero-description {
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #f7b731;
+  color: #000000;
+  border: 2px solid #f7b731;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: #f7b731;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #f7b731;
+}
+
+.btn-secondary:hover {
+  background: #f7b731;
+  color: #000000;
+}
